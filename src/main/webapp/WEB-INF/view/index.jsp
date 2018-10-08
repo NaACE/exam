@@ -11,18 +11,24 @@
 </head>
 <body>
 
+<div id="mySidenav" class="sidenav">
+
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>
+
 <div id="header"> <!-- ERROR (при изменении размера телефон и почта залезают на логотип) -->
     <ul id="menu">
-        <p>
-        <li style="width: 5%"><a href="#blank1">О нас</a></li>
-        <li style="width: 5%"><a href="#blank2">Услуги</a></li>
-        <li style="width: 5%"><a href="#blank3">Мастера</a></li>
+        <li><a href="#blank1">О нас</a></li>
+        <li><a href="#blank2">Услуги</a></li>
+        <li><a href="#blank3">Мастера</a></li>
         <!-- style="display: inline-block;width: 50%;max-width: 480px; margin-left: 15%" -->
-        <li style="width: 64%" style="margin-right: 4%; margin-left: 4%;"><img src="https://pp.userapi.com/c849528/v849528520/7a1e1/7nXTDF0suIs.jpg" style="max-width: 420px"></li>
+        <li><img src="https://pp.userapi.com/c849528/v849528520/7a1e1/7nXTDF0suIs.jpg" style="max-width: 420px;"></li>
         <!-- tyle="position: center; float: right; margin-right: 4%; vertical-align:middle; display: inline-block;" -->
-        <li style="width: 8%;"><a style="background-color: #9a1b20;">(180)212-03-66</a></li>
-        <li style="width: 8%;"><a style="background-color: #9a1b20;">hfp4e@vmani.coms</a></li>
-        </p>
+        <li><a style="background-color: #9a1b20;">(180)212-03-66</a></li>
+        <li><a style="background-color: #9a1b20;">hfp4e@vmani.coms</a></li>
     </ul>
 </div>
 
@@ -37,13 +43,13 @@
             Ждём тебя, чтобы поделиться этим всем. Нальём джин-тоник с огурцом или 50 рома, посидим и отдохнём. Заглядывай и оставайся надолго.<br><br>
             Мы всегда на расстоянии звонка.<br><br>
 
-            <button id="button" onclick="openNav()">Записаться</button> <!-- кнопка регистрации -->
+            <span class="button" onclick="openNav()">Записаться</span> <!-- кнопка регистрации -->
         </p>
     </div>
 
     <a name="blank2"></a> <!-- ссылка на услуги -->
     <div class="blank" style="text-align: center"> <!-- все услуги -->
-        <p style="color: blue;font-size: 48px;">Что Exam может сделать?</p>
+        <p style="color: blue;font-size: 6vmin;">Что Exam может сделать?</p>
         <img style="width: 100%" src="https://pp.userapi.com/c844417/v844417066/fec80/htjqcDHw9BQ.jpg">
     </div>
 
@@ -51,12 +57,12 @@
     <div class="blank"> <!-- все мастера -->
         <c:if test="${master != null}" var="isMasterPresent">
             <table>
-                <tr id="test">
+                <tr>
                     <%--@elvariable id="master" type="java.util.List"--%>
                     <c:forEach items="${master}" var="master" varStatus="status">
-                        <th id="inactive_employee_withdrawal">
-                            <p>
-                                <img src="${master.img}">
+                        <th>
+                            <p class="inactive_employee_withdrawal">
+                                <img src="${master.img}"><br>
                                 <span>${master.name}</span>
                             </p>
                         </th>
