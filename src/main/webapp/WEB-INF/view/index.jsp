@@ -48,7 +48,7 @@
 
     <a name="blank2"></a> <!-- ссылка на услуги -->
     <div class="blank" style="text-align: center"> <!-- все услуги -->
-        <p style="color: blue;font-size: 6vmin;">Что Exam может сделать?</p>
+        <h2 style="color: blue;font-size: 6vmin;">Что Exam может сделать?</h2>
         <img style="width: 100%" src="https://pp.userapi.com/c844417/v844417066/fec80/htjqcDHw9BQ.jpg">
     </div>
 
@@ -62,7 +62,7 @@
                         <th>
                             <p class="inactive_employee_withdrawal">
                                 <img src="${master.img}"><br>
-                                <span>${master.name}</span>
+                                <h4>${master.name}</h4>
                             </p>
                         </th>
                     </c:forEach>
