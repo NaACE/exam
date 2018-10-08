@@ -5,10 +5,6 @@ function changeStyleDiv() {
         document.getElementById('hideabDiv').style.display = "block";
     }
 }
-function clickAssociate() {
-
-}
-
 
 function openNav() {
     if(document.getElementById("mySidenav").style.width == "250px") {
