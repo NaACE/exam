@@ -6,12 +6,17 @@ function changeStyleDiv() {
     }
 }
 
+
 function openNav() {
-    if(document.getElementById("mySidenav").style.width == "250px") {
+    if(document.getElementById("mySidenav").style.width == "500px") {
         document.getElementById("mySidenav").style.width = "0";
     } else {
-        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mySidenav").style.width = "500px";
     }
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
 }
 
 function myFunction() {
@@ -21,4 +26,8 @@ function myFunction() {
     } else {
         x.style.display = "block";
     }
+}
+
+function openMasters() {
+    document.getElementById("master").style.display = "block";
 }

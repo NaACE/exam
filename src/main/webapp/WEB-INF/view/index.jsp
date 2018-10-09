@@ -12,10 +12,15 @@
 <body>
 
 <div id="mySidenav" class="sidenav">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <div id="form">
+        <div class="form_div" onclick="openMasters()">
+            <p>Сотрудник</p>
+            <span id="name_master"></span>
+            <div id="master"></div>
+        </div>
+    </div>
+
+    <span class="confirm_record"><p>Подтвердить запись</p></span>
 </div>
 
 <div id="header">
@@ -28,7 +33,6 @@
     </ul>
 
     <!-- mini manu -->
-    <!-- Simulate a smartphone / tablet -->
     <div class="mobile-container">
         <div class="topnav">
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
