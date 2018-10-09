@@ -92,6 +92,9 @@ body {
 .blank p {
     font-size: 2vmax;
 }
+.blank_info {
+    font-size: 2vm;
+}
 .show_cat {
     text-align: center;
     font-size: 3vmax;
@@ -104,9 +107,9 @@ body {
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
+    font-size: 5vm;
+    padding: 4vw;
+    width: auto;
     transition: all 0.5s;
     cursor: pointer;
     margin: 4px;
@@ -285,6 +288,6 @@ body {
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: #9a1b20;
     color: white;
 }

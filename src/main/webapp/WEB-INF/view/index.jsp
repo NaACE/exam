@@ -31,15 +31,14 @@
     <!-- Simulate a smartphone / tablet -->
     <div class="mobile-container">
         <div class="topnav">
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             <a href="#home" class="active"><br></a>
             <div id="myLinks">
-                <a href="#blank1">О нас</a>
-                <a href="#blank2">Услуги</a>
-                <a href="#blank3">Мастера</a>
+                <a href="#about">О нас</a>
+                <a href="#services">Услуги</a>
+                <a href="#masters">Мастера</a>
+                <a href="#contacts">Контакты</a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
         </div>
     </div>
 </div>
@@ -48,12 +47,11 @@
 <div id="body">
     <div class="blank">
         <div class="show_cat">
-            <a class="blank_info" name="about">О НАС</a><!-- ссылка на главный блог -->
+            <a style="font-size: 3vw" name="about">О НАС</a><!-- ссылка на главный блог -->
         </div>
-        <p>  <!-- вся информация -->
-            <span class="colorRed"> Exam </span>— это база в самом сердце города, где можно скрыться в любой удобной для тебя форме. Мужская стрижка, уход за бородой, классическое бритье, и разговор с теми, кому не все равно.
+        <p style="font-size: 2vw"> <span class="colorRed"> Exam </span> — это база в самом сердце города, где можно скрыться в любой удобной для тебя форме. Мужская стрижка, уход за бородой, классическое бритье, и разговор с теми, кому не все равно.
         </p>
-        <p class="textCenter">
+        <p class="textCenter" style="font-size: 2vw">
             Ждём тебя, чтобы поделиться этим всем. Нальём джин-тоник с огурцом или 50 рома, посидим и отдохнём. Заглядывай и оставайся надолго.<br><br>
             Мы всегда на расстоянии звонка.<br><br>
 
@@ -63,14 +61,14 @@
 
     <div class="blank" style="text-align: center"> <!-- все услуги -->
         <div class="show_cat">
-            <a class="blank_info" name="services">УСЛУГИ</a> <!-- ссылка на услуги -->
+            <a style="font-size: 3vw" name="services">УСЛУГИ</a> <!-- ссылка на услуги -->
         </div>
         <img style="width: 100%" src="https://pp.userapi.com/c844417/v844417066/fec80/htjqcDHw9BQ.jpg">
     </div>
 
     <div class="blank"> <!-- все мастера -->
         <div class="show_cat">
-            <a class="blank_info" name="masters">МАСТЕРА</a> <!-- ссылка на мастеров -->
+            <a style="font-size: 3vw" name="masters">МАСТЕРА</a> <!-- ссылка на мастеров -->
         </div><br>
 
         <div class="center">
@@ -80,7 +78,7 @@
                             <%--@elvariable id="master" type="java.util.List"--%>
                         <c:forEach items="${master}" var="master" varStatus="status">
                             <th>
-                                <p class="inactive_employee_withdrawal" style="font-size: 2vmax;">
+                                <p class="inactive_employee_withdrawal" style="font-size: 2vw;">
                                     <img src="${master.img}"><br><br>
                                     ${master.name}
                                 </p>
@@ -95,26 +93,26 @@
 
     <div class="blank">
         <div class="show_cat">
-            <a class="blank_info" name="contacts">КОНТАКТЫ</a> <!-- ссылка на мастеров -->
+            <a style="font-size: 3vw" name="contacts">КОНТАКТЫ</a> <!-- ссылка на мастеров -->
         </div>
 
         <div style="width: 100%;">
             <div style="width: 45%;display:inline-block;">
-                <p style="font-size: 2vmax; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
-                <p style="font-size: 1vmax">с 10:00 до 22:00<br>Без выходных</p>
+                <p style="font-size: 2vw; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
+                <p style="font-size: 1vw">с 10:00 до 22:00<br>Без выходных</p>
             </div>
             <div style="width: 45%;display:inline-block; float: right">
-                <p style="font-size: 2vmax; margin-bottom: 2%;margin-top: 2%">Адрес: г. Днепропетровск</p>
-                <p style="font-size: 1vmax">Email: hfp4e@vmani.coms<br>Телефон: (180)212-03-66</p>
+                <p style="font-size: 2vw; margin-bottom: 2%;margin-top: 2%">Адрес: г. Днепропетровск</p>
+                <p style="font-size: 1vw">Email: hfp4e@vmani.coms<br>Телефон: (180)212-03-66</p>
             </div>
         </div>
         <div style="width: 100%; background-color: #111111; height: 10px">
 
         </div>
-        <p style="font-size: 2vmax; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
-        <p style="font-size: 1vmax">с 10:00 до 22:00<br>Без выходных</p>
-        <p style="font-size: 2vmax; margin-bottom: 2%;margin-top: 2%">Адрес: г. Днепропетровск</p>
-        <p style="font-size: 1vmax">Email: hfp4e@vmani.coms<br>Телефон: (180)212-03-66</p>
+        <p style="font-size: 2vw; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
+        <p style="font-size: 1vw">с 10:00 до 22:00<br>Без выходных</p>
+        <p style="font-size: 2vw; margin-bottom: 2%;margin-top: 2%">Адрес: г. Днепропетровск</p>
+        <p style="font-size: 1vw">Email: hfp4e@vmani.coms<br>Телефон: (180)212-03-66</p>
     </div>
 </div>
 </body>
