@@ -71,22 +71,42 @@
             <a style="font-size: 3vw" name="masters">МАСТЕРА</a> <!-- ссылка на мастеров -->
         </div><br>
 
-        <div class="center">
-            <c:if test="${master != null}" var="isMasterPresent">
-                <table>
-                    <tr>
-                            <%--@elvariable id="master" type="java.util.List"--%>
-                        <c:forEach items="${master}" var="master" varStatus="status">
-                            <th>
-                                <p class="inactive_employee_withdrawal" style="font-size: 2vw;">
-                                    <img src="${master.img}"><br><br>
-                                    ${master.name}
-                                </p>
-                            </th>
-                        </c:forEach>
-                    </tr>
-                </table>
-            </c:if>
+
+        <div class="show_main">
+            <div class="center">
+                <c:if test="${master != null}" var="isMasterPresent">
+                    <table>
+                        <tr>
+                                <%--@elvariable id="master" type="java.util.List"--%>
+                            <c:forEach items="${master}" var="master" varStatus="status">
+                                <th>
+                                    <p class="inactive_employee_withdrawal" style="font-size: 2vw;">
+                                        <img src="${master.img}"><br><br>
+                                            ${master.name}
+                                    </p>
+                                </th>
+                            </c:forEach>
+                        </tr>
+                    </table>
+                </c:if>
+            </div>
+        </div>
+        <div class="show_mini">
+            <div class="center">
+                <c:if test="${master != null}" var="isMasterPresent">
+                    <table>
+                                <%--@elvariable id="master" type="java.util.List"--%>
+                            <c:forEach items="${master}" var="master" varStatus="status">
+                                <tr>
+                                    <p class="inactive_employee_withdrawal" style="font-size: 3vw;">
+                                        <img style="width: 50vw; max-width: 250px" src="${master.img}"><br><br>
+                                            ${master.name}
+                                    </p>
+                                </tr>
+                            </c:forEach>
+                    </table>
+                </c:if>
+            </div>
         </div>
     </div> <!-- end все мастера -->
 
@@ -96,23 +116,25 @@
             <a style="font-size: 3vw" name="contacts">КОНТАКТЫ</a> <!-- ссылка на мастеров -->
         </div>
 
-        <div style="width: 100%;">
-            <div style="width: 45%;display:inline-block;">
-                <p style="font-size: 2vw; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
-                <p style="font-size: 1vw">с 10:00 до 22:00<br>Без выходных</p>
-            </div>
-            <div style="width: 45%;display:inline-block; float: right">
-                <p style="font-size: 2vw; margin-bottom: 2%;margin-top: 2%">Адрес: г. Днепропетровск</p>
-                <p style="font-size: 1vw">Email: hfp4e@vmani.coms<br>Телефон: (180)212-03-66</p>
+        <div class="show_main">
+            <div style="width: 100%;">
+                <div style="width: 45%;display:inline-block;">
+                    <p style="font-size: 2vw; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
+                    <p style="font-size: 1vw">с 10:00 до 22:00<br>Без выходных</p>
+                </div>
+                <div style="width: 45%;display:inline-block; float: right">
+                    <p style="font-size: 2vw; margin-bottom: 2%;margin-top: 2%">Адрес: г. Днепропетровск</p>
+                    <p style="font-size: 1vw">Email: hfp4e@vmani.coms<br>Телефон: (180)212-03-66</p>
+                </div>
             </div>
         </div>
-        <div style="width: 100%; background-color: #111111; height: 10px">
 
+        <div class="show_mini">
+            <p style="font-size: 3vw; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
+            <p style="font-size: 2vw">с 10:00 до 22:00<br>Без выходных</p>
+            <p style="font-size: 3vw; margin-bottom: 2%;margin-top: 2%">Адрес: г. Днепропетровск</p>
+            <p style="font-size: 2vw">Email: hfp4e@vmani.coms<br>Телефон: (180)212-03-66</p>
         </div>
-        <p style="font-size: 2vw; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
-        <p style="font-size: 1vw">с 10:00 до 22:00<br>Без выходных</p>
-        <p style="font-size: 2vw; margin-bottom: 2%;margin-top: 2%">Адрес: г. Днепропетровск</p>
-        <p style="font-size: 1vw">Email: hfp4e@vmani.coms<br>Телефон: (180)212-03-66</p>
     </div>
 </div>
 </body>

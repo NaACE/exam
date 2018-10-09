@@ -16,12 +16,25 @@ body {
     .mobile-container {
         display: block;
     }
+    .show_main {
+        display: none;
+    }
+    .show_mini {
+        display: block;
+    }
 }
 @media screen and (min-width: 760px){
     #menu {
         display: block;
     }
     .mobile-container {
+        display: none;
+    }
+
+    .show_main {
+        display: block;
+    }
+    .show_mini {
         display: none;
     }
 }
@@ -141,7 +154,6 @@ body {
     margin: 20px;
 }
 #inactive_employee_withdrawal img { /* фото неактивного вывода сотрудника */
-    width: auto;
     display: inline-block;
 }
 
