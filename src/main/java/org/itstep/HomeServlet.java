@@ -13,6 +13,7 @@ import java.util.List;
 @WebServlet("/")
 public class HomeServlet extends HttpServlet {
     List<Masters> master;
+    List<Services> service;
 
     public static final String connectionString = "jdbc:sqlite:database.db";
     String userName = "root";
@@ -26,6 +27,13 @@ public class HomeServlet extends HttpServlet {
                 "  id   integer primary key autoincrement,\n" +
                 "  name varchar(255) null,\n" +
                 "  img  varchar(255) null\n" +
+                ");");
+        executeSql("create table if not exists services\n" +
+                "(\n" +
+                "  id   integer primary key autoincrement,\n" +
+                "  name varchar(255) null,\n" +
+                "  time  varchar(255) null\n" +
+                "  price  varchar(255) null\n" +
                 ");");
     }
 
@@ -50,10 +58,20 @@ public class HomeServlet extends HttpServlet {
 
                 master.add(new Masters(name,img));
             }
+            ResultSet resultSet1 = statement.executeQuery(("select * from s"));
+            service = new ArrayList<>();
+            while (resultSet1.next()) {
+                String name = resultSet1.getString("name");
+                String time = resultSet1.getString("time");
+                String price = resultSet1.getString("price");
+
+                service.add(new Services(name,time,price));
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
         req.setAttribute("master",master);
+        req.setAttribute("service",service);
         req.getRequestDispatcher("/WEB-INF/view/index.jsp")
                 .forward(req, resp);
     }

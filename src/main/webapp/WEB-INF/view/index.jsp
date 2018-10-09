@@ -13,8 +13,8 @@
 
 <div id="mySidenav" class="sidenav">
     <div id="online_info">
-        <div class="form_div" style="background-image: url(https://pp.userapi.com/c849528/v849528520/7a1e1/7nXTDF0suIs.jpg);height: 135px">
-            <p style="margin: 55px 0 0;">
+        <div class="form_div" style="background-color: #808080;height: 120px;">
+            <p>
                 <strong style="color: black; font-size: 36px; margin: 0">ОНЛАЙН-ЗАПИСЬ</strong>
             </p>
             <p style="margin: 0">
