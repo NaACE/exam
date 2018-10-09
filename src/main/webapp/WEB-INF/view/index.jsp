@@ -18,23 +18,38 @@
     <a href="#">Contact</a>
 </div>
 
-<div id="header"> <!-- ERROR (при изменении размера телефон и почта залезают на логотип) -->
-    <ul id="menu">
-        <li><a href="#blank1">О нас</a></li>
-        <li><a href="#blank2">Услуги</a></li>
-        <li><a href="#blank3">Мастера</a></li>
-        <!-- style="display: inline-block;width: 50%;max-width: 480px; margin-left: 15%" -->
-        <li><img src="https://pp.userapi.com/c849528/v849528520/7a1e1/7nXTDF0suIs.jpg" style="max-width: 420px;"></li>
-        <!-- tyle="position: center; float: right; margin-right: 4%; vertical-align:middle; display: inline-block;" -->
-        <li><a style="background-color: #9a1b20;">(180)212-03-66</a></li>
-        <li><a style="background-color: #9a1b20;">hfp4e@vmani.coms</a></li>
+<div id="header">
+    <ul id="menu"> <!-- main menu -->
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#masters">Мастера</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+        <li style="margin-left: 6%"><img src="https://pp.userapi.com/c849528/v849528520/7a1e1/7nXTDF0suIs.jpg" style="max-width: 420px;"></li>
     </ul>
+
+    <!-- mini manu -->
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+        <div class="topnav">
+            <a href="#home" class="active"><br></a>
+            <div id="myLinks">
+                <a href="#blank1">О нас</a>
+                <a href="#blank2">Услуги</a>
+                <a href="#blank3">Мастера</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
 </div>
 
 
 <div id="body">
-    <a name="blank1"></a> <!-- ссылка на главный блог -->
     <div class="blank">
+        <div class="show_cat">
+            <a class="blank_info" name="about">О НАС</a><!-- ссылка на главный блог -->
+        </div>
         <p>  <!-- вся информация -->
             <span class="colorRed"> Exam </span>— это база в самом сердце города, где можно скрыться в любой удобной для тебя форме. Мужская стрижка, уход за бородой, классическое бритье, и разговор с теми, кому не все равно.
         </p>
@@ -46,30 +61,61 @@
         </p>
     </div>
 
-    <a name="blank2"></a> <!-- ссылка на услуги -->
     <div class="blank" style="text-align: center"> <!-- все услуги -->
-        <h2 style="color: blue;font-size: 6vmin;">Что Exam может сделать?</h2>
+        <div class="show_cat">
+            <a class="blank_info" name="services">УСЛУГИ</a> <!-- ссылка на услуги -->
+        </div>
         <img style="width: 100%" src="https://pp.userapi.com/c844417/v844417066/fec80/htjqcDHw9BQ.jpg">
     </div>
 
-    <a name="blank3"></a> <!-- ссылка на мастеров -->
     <div class="blank"> <!-- все мастера -->
-        <c:if test="${master != null}" var="isMasterPresent">
-            <table>
-                <tr>
-                    <%--@elvariable id="master" type="java.util.List"--%>
-                    <c:forEach items="${master}" var="master" varStatus="status">
-                        <th>
-                            <p class="inactive_employee_withdrawal">
-                                <img src="${master.img}"><br>
-                                <h4>${master.name}</h4>
-                            </p>
-                        </th>
-                    </c:forEach>
-                </tr>
-            </table>
-        </c:if>
+        <div class="show_cat">
+            <a class="blank_info" name="masters">МАСТЕРА</a> <!-- ссылка на мастеров -->
+        </div><br>
+
+        <div class="center">
+            <c:if test="${master != null}" var="isMasterPresent">
+                <table>
+                    <tr>
+                            <%--@elvariable id="master" type="java.util.List"--%>
+                        <c:forEach items="${master}" var="master" varStatus="status">
+                            <th>
+                                <p class="inactive_employee_withdrawal" style="font-size: 2vmax;">
+                                    <img src="${master.img}"><br><br>
+                                    ${master.name}
+                                </p>
+                            </th>
+                        </c:forEach>
+                    </tr>
+                </table>
+            </c:if>
+        </div>
     </div> <!-- end все мастера -->
+
+
+    <div class="blank">
+        <div class="show_cat">
+            <a class="blank_info" name="contacts">КОНТАКТЫ</a> <!-- ссылка на мастеров -->
+        </div>
+
+        <div style="width: 100%;">
+            <div style="width: 45%;display:inline-block;">
+                <p style="font-size: 2vmax; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
+                <p style="font-size: 1vmax">с 10:00 до 22:00<br>Без выходных</p>
+            </div>
+            <div style="width: 45%;display:inline-block; float: right">
+                <p style="font-size: 2vmax; margin-bottom: 2%;margin-top: 2%">Адрес: г. Днепропетровск</p>
+                <p style="font-size: 1vmax">Email: hfp4e@vmani.coms<br>Телефон: (180)212-03-66</p>
+            </div>
+        </div>
+        <div style="width: 100%; background-color: #111111; height: 10px">
+
+        </div>
+        <p style="font-size: 2vmax; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
+        <p style="font-size: 1vmax">с 10:00 до 22:00<br>Без выходных</p>
+        <p style="font-size: 2vmax; margin-bottom: 2%;margin-top: 2%">Адрес: г. Днепропетровск</p>
+        <p style="font-size: 1vmax">Email: hfp4e@vmani.coms<br>Телефон: (180)212-03-66</p>
+    </div>
 </div>
 </body>
 </html>
