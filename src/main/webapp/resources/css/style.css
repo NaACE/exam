@@ -345,9 +345,30 @@ body {
     color: white;
 }
 .form_div {
-    width: 90%;
     background-color: #FFFFFF;
+
+    vertical-align:middle;
+    display: inline-block;
+    text-align: center;
+
+    border-radius: 4px;
+    border: none;
+    font-size: 5vm;
+    width: 90%;
+    margin-bottom: 4px;
+    transition: all 0.5s;
+
+    cursor:pointer;
+}
+.form_div_masters {
+
+}
+.form_div p {
+    text-align: center;
 }
 #master {
+    display: none;
+}
+#all_master {
     display: none;
 }

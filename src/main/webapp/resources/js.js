@@ -29,5 +29,31 @@ function myFunction() {
 }
 
 function openMasters() {
-    document.getElementById("master").style.display = "block";
+    document.getElementById("all_master").style.display = "block";
+    document.getElementById("mainNav").style.display = "none";
+}
+
+function Nikolai() {
+    document.getElementById("name_master").textContent = "Nikolai";
+
+    document.getElementById("all_master").style.display = "none";
+    document.getElementById("mainNav").style.display = "block";
+}
+function Vladimir() {
+    document.getElementById("name_master").textContent = "Vladimir";
+
+    document.getElementById("all_master").style.display = "none";
+    document.getElementById("mainNav").style.display = "block";
+}
+function Dmitry() {
+    document.getElementById("name_master").textContent = "Dmitry";
+
+    document.getElementById("all_master").style.display = "none";
+    document.getElementById("mainNav").style.display = "block";
+}
+function Artems() {
+    document.getElementById("name_master").textContent = "Artems";
+
+    document.getElementById("all_master").style.display = "none";
+    document.getElementById("mainNav").style.display = "block";
 }

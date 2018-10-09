@@ -12,15 +12,23 @@
 <body>
 
 <div id="mySidenav" class="sidenav">
-    <div id="form">
+    <div id="mainNav">
         <div class="form_div" onclick="openMasters()">
             <p>Сотрудник</p>
             <span id="name_master"></span>
-            <div id="master"></div>
         </div>
+        <br>
+        <span class="confirm_record"><p>Подтвердить запись</p></span>
     </div>
 
-    <span class="confirm_record"><p>Подтвердить запись</p></span>
+    <div class="form_div_masters" id="all_master">
+        <c:if test="${master != null}" var="isMasterPresent">
+            <%--@elvariable id="master" type="java.util.List"--%>
+            <c:forEach items="${master}" var="master" varStatus="status">
+                <div class="form_div" onclick="${master.name}()">${master.name}</div>
+            </c:forEach>
+        </c:if>
+    </div>
 </div>
 
 <div id="header">
