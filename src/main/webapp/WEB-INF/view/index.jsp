@@ -12,20 +12,34 @@
 <body>
 
 <div id="mySidenav" class="sidenav">
-    <div id="mainNav">
-        <div class="form_div" onclick="openMasters()">
-            <p>Сотрудник</p>
-            <span id="name_master"></span>
+    <div id="online_info">
+        <div class="form_div" style="background-image: url(https://pp.userapi.com/c849528/v849528520/7a1e1/7nXTDF0suIs.jpg);height: 135px">
+            <p style="margin: 55px 0 0;">
+                <strong style="color: black; font-size: 36px; margin: 0">ОНЛАЙН-ЗАПИСЬ</strong>
+            </p>
+            <p style="margin: 0">
+                <strong style="color: black; font-size: 36px; margin: 0">Barbershop</strong>
+            </p>
         </div>
-        <br>
-        <span class="confirm_record"><p>Подтвердить запись</p></span>
     </div>
 
-    <div class="form_div_masters" id="all_master">
+    <div id="mainNav">
+        <div class="form_div" onclick="openMasters()">
+            <p>Сотрудник</p><br>
+            <span class="selected_span" id="name_master"></span>
+        </div>
+        <br><br>
+        <span class="confirm_record"><p>ОФОРМИТЬ ВИЗИТ</p></span>
+    </div>
+
+    <div id="all_master">
         <c:if test="${master != null}" var="isMasterPresent">
             <%--@elvariable id="master" type="java.util.List"--%>
             <c:forEach items="${master}" var="master" varStatus="status">
-                <div class="form_div" onclick="${master.name}()">${master.name}</div>
+                <div class="form_div_masters" onclick="${master.name}()">
+                    <img src="${master.img}">
+                    <p s>${master.name}</p>
+                </div>
             </c:forEach>
         </c:if>
     </div>
@@ -54,8 +68,6 @@
         </div>
     </div>
 </div>
-
-
 <div id="body">
     <div class="blank">
         <div class="show_cat">
