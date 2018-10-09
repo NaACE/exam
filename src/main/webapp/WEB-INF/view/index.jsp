@@ -37,8 +37,10 @@
             <%--@elvariable id="master" type="java.util.List"--%>
             <c:forEach items="${master}" var="master" varStatus="status">
                 <div class="form_div_masters" onclick="${master.name}()">
-                    <img src="${master.img}">
-                    <p s>${master.name}</p>
+                    <ul class="hr">
+                        <img src="${master.img}">
+                        <p>${master.name}</p>
+                    </ul>
                 </div>
             </c:forEach>
         </c:if>
