@@ -26,7 +26,6 @@ public class HomeServlet extends HttpServlet {
         );
 
         req.setAttribute("master",master);
-        req.setAttribute("service",service);
         req.getRequestDispatcher("/WEB-INF/view/index.jsp")
                 .forward(req, resp);
     }
