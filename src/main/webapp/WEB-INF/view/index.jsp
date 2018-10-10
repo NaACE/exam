@@ -13,12 +13,12 @@
 
 <div id="mySidenav" class="sidenav">
     <div id="online_info">
-        <div class="form_div" style="background-color: #808080;height: 120px;">
-            <p>
-                <strong style="color: black; font-size: 36px; margin: 0">ОНЛАЙН-ЗАПИСЬ</strong>
-            </p>
+        <div class="form_div" style="background-color: #808080;height: 94px;">
+            <p style="margin: 40px 0 0;">
+                <strong style="color: #fff; font-size: 21px; margin: 0">ОНЛАЙН-ЗАПИСЬ</strong>
+            </p><br>
             <p style="margin: 0">
-                <strong style="color: black; font-size: 36px; margin: 0">Barbershop</strong>
+                <strong style="color: #fff; font-size: 21px; margin: 0">Barbershop</strong>
             </p>
         </div>
     </div>
