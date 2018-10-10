@@ -28,6 +28,10 @@
             <p>Сотрудник</p><br>
             <span class="selected_span" id="name_master"></span>
         </div>
+        <div class="form_div" onclick="openServices()">
+            <p>Сотрудник</p><br>
+            <span class="selected_span" id="name_service"></span>
+        </div>
         <br><br>
         <span class="confirm_record"><p>ОФОРМИТЬ ВИЗИТ</p></span>
     </div>
@@ -36,11 +40,32 @@
         <c:if test="${master != null}" var="isMasterPresent">
             <%--@elvariable id="master" type="java.util.List"--%>
             <c:forEach items="${master}" var="master" varStatus="status">
-                <div class="form_div_masters" onclick="${master.name}()">
+                <div class="form_div_masters" onclick="
+                        getElementById('mainNav').style.display = 'block';
+                        getElementById('all_master').style.display = 'none';
+                        getElementById('all_service').style.display = 'none';
+                        getElementById('name_master').textContent = '${master.name}';">
                     <ul class="hr">
                         <img src="${master.img}">
                         <p>${master.name}</p>
                     </ul>
+                </div>
+            </c:forEach>
+        </c:if>
+    </div>
+
+    <div id="all_service">
+        <c:if test="${service != null}" var="isServicePresent">
+            <%--@elvariable id="master" type="java.util.List"--%>
+            <c:forEach items="${service}" var="service" varStatus="status">
+                <div class="form_div_masters" onclick="
+                        getElementById('mainNav').style.display = 'block';
+                        getElementById('all_master').style.display = 'none';
+                        getElementById('all_service').style.display = 'none';
+                        getElementById('name_service').textContent = '${service.name}';">
+                    <p>${service.name}</p><br>
+
+                    <span class="selected_span">${service.price}</span>
                 </div>
             </c:forEach>
         </c:if>

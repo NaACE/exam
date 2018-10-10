@@ -17,14 +17,18 @@ public class HomeServlet extends HttpServlet {
     List<Masters> master;
     List<Services> service;
 
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         master = DatabaseConnection.instance().fetchAllQuery("SELECT * FROM masters",set->
                 new Masters(set.getString("name"),set.getString("img"))
         );
+        service = DatabaseConnection.instance().fetchAllQuery("SELECT * FROM services", set ->
+                new Services(set.getString("name"),set.getString("price"))
+        );
 
-        req.setAttribute("master",master);
+        req.setAttribute("master", master);
+        req.setAttribute("service", service);
+
         req.getRequestDispatcher("/WEB-INF/view/index.jsp")
                 .forward(req, resp);
     }

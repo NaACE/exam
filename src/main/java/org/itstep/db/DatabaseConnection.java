@@ -16,7 +16,6 @@ public class DatabaseConnection {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
             String connstr = String.format("jdbc:mysql://%s:%d/%s?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC",HOST,PORT,DBNAME);
-            System.out.println(connstr);
             connection = DriverManager.getConnection(connstr,USER, PASS);
         }catch (Exception e){
             e.printStackTrace();

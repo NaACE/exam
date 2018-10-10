@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeac13da-271a-4f90-993a-a4a97cd3b0ad" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/89cc3960-d51b-4fea-aaae-9526bc3afe59.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/89cc3960-d51b-4fea-aaae-9526bc3afe59.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/Services.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/itstep/db/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/itstep/db/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/itstep/HomeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/itstep/HomeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/itstep/Services.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/itstep/Services.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/itstep/db/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/itstep/db/DatabaseConnection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2018-10-10" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2018-10-10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/view/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/view/index_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/view/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/view/index_jsp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,6 +58,13 @@
         <item name="barbershop: schema" type="c314c289:MysqlImplModel$Schema" />
         <item name="masters: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="barbershop@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="barbershop: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="services: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -69,45 +82,48 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="10" />
-          <entry key="js" value="2" />
-          <entry key="jsp" value="1" />
-          <entry key="masters" value="6" />
-          <entry key="sql" value="8" />
+          <entry key="css" value="1" />
+          <entry key="java" value="18" />
+          <entry key="js" value="3" />
+          <entry key="jsp" value="3" />
+          <entry key="masters" value="9" />
+          <entry key="services" value="4" />
+          <entry key="sql" value="16" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="6" />
-          <entry key="JAVA" value="10" />
-          <entry key="JSP" value="1" />
-          <entry key="JavaScript" value="2" />
-          <entry key="SQL" value="6" />
-          <entry key="Scratch" value="2" />
+          <entry key="CSS" value="1" />
+          <entry key="Database Element" value="13" />
+          <entry key="JAVA" value="18" />
+          <entry key="JSP" value="3" />
+          <entry key="JavaScript" value="3" />
+          <entry key="SQL" value="9" />
+          <entry key="Scratch" value="7" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="638" />
-          <entry key="java" value="868" />
-          <entry key="js" value="161" />
-          <entry key="jsp" value="1090" />
-          <entry key="sql" value="139" />
+          <entry key="css" value="648" />
+          <entry key="java" value="992" />
+          <entry key="js" value="205" />
+          <entry key="jsp" value="1471" />
+          <entry key="sql" value="147" />
           <entry key="txt" value="11" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="638" />
-          <entry key="JAVA" value="868" />
-          <entry key="JSP" value="1090" />
-          <entry key="JavaScript" value="161" />
+          <entry key="CSS" value="648" />
+          <entry key="JAVA" value="992" />
+          <entry key="JSP" value="1471" />
+          <entry key="JavaScript" value="205" />
           <entry key="PLAIN_TEXT" value="11" />
-          <entry key="SQL" value="99" />
-          <entry key="Scratch" value="40" />
+          <entry key="SQL" value="105" />
+          <entry key="Scratch" value="42" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
@@ -115,50 +131,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/HomeServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/db/DatabaseConnection.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="17" column="163" selection-start-line="17" selection-start-column="163" selection-end-line="17" selection-end-column="163" />
+            <state relative-caret-position="193">
+              <caret line="64" column="79" selection-start-line="64" selection-start-column="79" selection-end-line="64" selection-end-column="79" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#li#4;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/sql/DriverManager.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2927">
-              <caret line="235" column="29" selection-start-line="235" selection-start-column="29" selection-end-line="235" selection-end-column="29" />
+            <state relative-caret-position="-353">
+              <caret line="394" column="17" selection-start-line="394" selection-start-column="1" selection-end-line="394" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/89cc3960-d51b-4fea-aaae-9526bc3afe59/console.sql">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="58" selection-start-column="58" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="127" column="93" selection-start-line="127" selection-start-column="93" selection-end-line="127" selection-end-column="93" />
+            <state relative-caret-position="228">
+              <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -174,7 +172,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>show</find>
       <find>test</find>
       <find>padding</find>
       <find>button</find>
@@ -199,11 +196,12 @@
       <find>sidenav</find>
       <find>confirm_record</find>
       <find>mainNav</find>
-      <find>form_div_masters</find>
       <find>form_div</find>
       <find>openMasters</find>
       <find>service</find>
       <find>sqlsql</find>
+      <find>all_master</find>
+      <find>form_div_masters</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -217,16 +215,17 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f1af481f-76a9-44d4-a424-c4347e4dd62f/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8e34c558-5ece-4702-8bb1-b23b8012ec4e/console.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/test.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
-        <option value="$PROJECT_DIR$/src/main/java/org/itstep/Services.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fe3e3ed0-0173-4e7a-af16-c18f67e5dc9f/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/services.sql" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/itstep/HomeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/services.sql" />
+        <option value="89cc3960-d51b-4fea-aaae-9526bc3afe59/schema/barbershop/table/services.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/89cc3960-d51b-4fea-aaae-9526bc3afe59/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/org/itstep/Services.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/itstep/db/DatabaseConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/java/org/itstep/HomeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" />
       </list>
     </option>
   </component>
@@ -371,11 +370,14 @@
     <property name="SearchEverywhereHistoryKey" value=" {&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539158125461" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539185570755" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)&#10;MySQL" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -444,12 +446,12 @@
       <workItem from="1539096058203" duration="2443000" />
       <workItem from="1539101142919" duration="577000" />
       <workItem from="1539109850536" duration="5172000" />
-      <workItem from="1539156319922" duration="1637000" />
+      <workItem from="1539156319922" duration="9115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57213000" />
+    <option name="totallyTimeSpent" value="64691000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -464,7 +466,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17932148" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17932148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -474,14 +476,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.61232877" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4983845" visible="true" weight="0.41369864" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32949308" />
       <window_info anchor="bottom" id="Database Console" order="7" weight="0.32739726" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32949308" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50080776" side_tool="true" weight="0.30273974" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5016155" side_tool="true" weight="0.41369864" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32949308" />
       <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32949308" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32949308" />
@@ -491,7 +493,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.19063005" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.3263328" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3263328" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -553,20 +555,6 @@
     <entry file="das://8e34c558-5ece-4702-8bb1-b23b8012ec4e/schema/main/table/masters" />
     <entry file="das://c9e40f94-9f4c-4cc6-9138-a2dd27e0032a/schema/main/table/masters" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/test.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="63" selection-start-line="57" selection-start-column="63" selection-end-line="57" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5235">
-          <caret line="349" column="9" selection-start-line="349" selection-start-column="1" selection-end-line="349" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fe3e3ed0-0173-4e7a-af16-c18f67e5dc9f/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -581,53 +569,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/services.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="84" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/Masters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/Barbershop DB.sql" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/Services.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="127" column="93" selection-start-line="127" selection-start-column="93" selection-end-line="127" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/HomeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/89cc3960-d51b-4fea-aaae-9526bc3afe59/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="58" selection-start-column="58" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -638,15 +583,180 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://89cc3960-d51b-4fea-aaae-9526bc3afe59/schema/barbershop/table/services.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/Barbershop DB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/services.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="84" lean-forward="true" selection-start-line="9" selection-end-line="14" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/Services.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://89cc3960-d51b-4fea-aaae-9526bc3afe59/schema/barbershop/table/services">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://89cc3960-d51b-4fea-aaae-9526bc3afe59/schema/barbershop/table/masters">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/Masters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/89cc3960-d51b-4fea-aaae-9526bc3afe59/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="7" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/db/DatabaseConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="17" column="163" selection-start-line="17" selection-start-column="163" selection-end-line="17" selection-end-column="163" />
+        <state relative-caret-position="-323">
+          <caret line="17" column="183" selection-start-line="17" selection-start-column="183" selection-end-line="17" selection-end-column="183" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/HomeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-353">
+          <caret line="394" column="17" selection-start-line="394" selection-start-column="1" selection-end-line="394" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="64" column="79" selection-start-line="64" selection-start-column="79" selection-end-line="64" selection-end-column="79" />
+          <folding>
+            <element signature="n#style#0;n#li#4;n#ul#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>exam:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>exam</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.google.protobuf:protobuf-java:2.6.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
