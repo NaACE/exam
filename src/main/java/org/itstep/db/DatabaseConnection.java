@@ -6,16 +6,17 @@ import java.util.List;
 
 public class DatabaseConnection {
     final static String USER="root";
-    final static String PASS="root";
+    final static String PASS="";
     final static String HOST="127.0.0.1";
     final static int PORT=3306;
-    final static String DBNAME="db";
+    final static String DBNAME="barbershop";
 
     Connection connection=null;
     private DatabaseConnection(){
         try{
-            Class.forName("com.mysql.jdbc.Driver");
-            String connstr = String.format("jdbc:mysql://{%s:%d}/{%s}",HOST,PORT,DBNAME);
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            String connstr = String.format("jdbc:mysql://%s:%d/%s?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC",HOST,PORT,DBNAME);
+            System.out.println(connstr);
             connection = DriverManager.getConnection(connstr,USER, PASS);
         }catch (Exception e){
             e.printStackTrace();
