@@ -33,7 +33,9 @@
             <span class="selected_span" id="name_service"></span>
         </div>
         <br><br>
-        <span class="confirm_record"><p>ОФОРМИТЬ ВИЗИТ</p></span>
+        <form method="post">
+            <input type="submit" class="confirm_record"><p>ОФОРМИТЬ ВИЗИТ</p></input>
+        </form>
     </div>
 
     <div id="all_master">
@@ -53,7 +55,6 @@
             </c:forEach>
         </c:if>
     </div>
-
     <div id="all_service">
         <c:if test="${service != null}" var="isServicePresent">
             <%--@elvariable id="master" type="java.util.List"--%>
@@ -64,8 +65,10 @@
                         getElementById('all_service').style.display = 'none';
                         getElementById('name_service').textContent = '${service.name}';">
                     <p>${service.name}</p><br>
-
-                    <span class="selected_span">${service.price}</span>
+                    <p>
+                        <span style="display: inline-block" class="selected_span">${service.times} </span>
+                        <span style="display: inline-block" class="selected_span">${service.price} ₴</span>
+                    </p>
                 </div>
             </c:forEach>
         </c:if>

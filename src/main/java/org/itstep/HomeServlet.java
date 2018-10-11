@@ -23,7 +23,7 @@ public class HomeServlet extends HttpServlet {
                 new Masters(set.getString("name"),set.getString("img"))
         );
         service = DatabaseConnection.instance().fetchAllQuery("SELECT * FROM services", set ->
-                new Services(set.getString("name"),set.getString("price"))
+                new Services(set.getString("name"),set.getString("price"),set.getString("times"))
         );
 
         req.setAttribute("master", master);
@@ -36,5 +36,8 @@ public class HomeServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doPost(req, resp);
+
+
+
     }
 }
