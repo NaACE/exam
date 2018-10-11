@@ -65,7 +65,7 @@
                         getElementById('all_service').style.display = 'none';
                         getElementById('name_service').textContent = '${service.name}';">
                     <p>${service.name}</p><br>
-                    <p>
+                    <p style="display: inline-block">
                         <span style="display: inline-block" class="selected_span">${service.times} </span>
                         <span style="display: inline-block" class="selected_span">${service.price} ₴</span>
                     </p>
