@@ -24,18 +24,25 @@
     </div>
 
     <div id="mainNav">
-        <div class="form_div" onclick="openMasters()">
-            <p>Сотрудник</p><br>
-            <span class="selected_span" id="name_master"></span>
-        </div>
-        <div class="form_div" onclick="openServices()">
-            <p>Сотрудник</p><br>
-            <span class="selected_span" id="name_service"></span>
-        </div>
-        <br><br>
-        <form method="post">
-            <input type="submit" class="confirm_record"><p>ОФОРМИТЬ ВИЗИТ</p></input>
-        </form>
+        <table class="form_table">
+            <tr>
+                <div class="form_div" onclick="openMasters()">
+                    <p>Сотрудник</p><br>
+                    <span class="selected_span" id="name_master"></span>
+                </div>
+            </tr>
+            <tr>
+                <div class="form_div" onclick="openServices()">
+                    <p>Услуга</p><br>
+                    <span class="selected_span" id="name_services"></span>
+                </div>
+            </tr>
+            <tr>
+                <form method="post">
+                    <input type="submit" class="button_nav"><p>ОФОРМИТЬ ВИЗИТ</p></input>
+                </form>
+            </tr>
+        </table>
     </div>
 
     <div id="all_master">
@@ -55,7 +62,7 @@
             </c:forEach>
         </c:if>
     </div>
-    <div id="all_service">
+    <div id="all_service" style="margin-bottom: 75px;">
         <c:if test="${service != null}" var="isServicePresent">
             <%--@elvariable id="master" type="java.util.List"--%>
             <c:forEach items="${service}" var="service" varStatus="status">
@@ -64,10 +71,10 @@
                         getElementById('all_master').style.display = 'none';
                         getElementById('all_service').style.display = 'none';
                         getElementById('name_service').textContent = '${service.name}';">
-                    <p>${service.name}</p><br>
+                    <p>${service.name}</p>
                     <p style="display: inline-block">
-                        <span style="display: inline-block" class="selected_span">${service.times} </span>
-                        <span style="display: inline-block" class="selected_span">${service.price} ₴</span>
+                        <span class="selected_span">${service.price} ₴ | </span>
+                        <span class="selected_span">${service.times} час</span>
                     </p>
                 </div>
             </c:forEach>

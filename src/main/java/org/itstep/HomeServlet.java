@@ -1,6 +1,7 @@
 package org.itstep;
 
 import org.itstep.db.DatabaseConnection;
+import org.itstep.db.MyDatabase;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,10 +20,10 @@ public class HomeServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        master = DatabaseConnection.instance().fetchAllQuery("SELECT * FROM masters",set->
+        master = MyDatabase.instance().fetchAllQuery("SELECT * FROM masters", set->
                 new Masters(set.getString("name"),set.getString("img"))
         );
-        service = DatabaseConnection.instance().fetchAllQuery("SELECT * FROM services", set ->
+        service = MyDatabase.instance().fetchAllQuery("SELECT * FROM services", set ->
                 new Services(set.getString("name"),set.getString("price"),set.getString("times"))
         );
 

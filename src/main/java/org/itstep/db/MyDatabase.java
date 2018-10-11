@@ -1,35 +1,33 @@
 package org.itstep.db;
 
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
 import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
 
-public class DatabaseConnection {
-    final static String USER="root";
-    final static String PASS="";
-    final static String HOST="127.0.0.1";
-    final static int PORT=3306;
-    final static String DBNAME="barbershop";
+public class MyDatabase extends HttpServlet {
+    public static final String connectionString = "jdbc:sqlite:database.db";
+    final static String userName = "root";
+    final static String password = "";
 
     Connection connection=null;
-    private DatabaseConnection(){
+    private MyDatabase(){
         try{
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            String connstr = String.format("jdbc:mysql://%s:%d/%s?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC",HOST,PORT,DBNAME);
-            connection = DriverManager.getConnection(connstr,USER, PASS);
+            connection = DriverManager.getConnection(connectionString, userName, password);
         }catch (Exception e){
             e.printStackTrace();
         }
     }
 
-    private static DatabaseConnection inst = null;
-    public synchronized static DatabaseConnection instance(){
-        if(inst==null) inst = new DatabaseConnection();
+    private static MyDatabase inst = null;
+    public synchronized static MyDatabase instance(){
+        if(inst==null) inst = new MyDatabase();
         return inst;
     }
 
 
-    /*public <T> List<T> fetchAllQuery(String query,Transformer<T> transformer){
+    public <T> List<T> fetchAllQuery(String query, Transformer<T> transformer){
         List<T> data = new LinkedList<>();
         try {
             Statement stmt = connection.createStatement();
@@ -45,7 +43,7 @@ public class DatabaseConnection {
             e.printStackTrace();
         }
         return data;
-    }*/
+    }
 
 
     public interface Transformer<T>{
