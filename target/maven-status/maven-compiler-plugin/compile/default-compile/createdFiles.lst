@@ -1,5 +1,5 @@
-org/itstep/db/MyDatabase$Transformer.class
-org/itstep/Services.class
-org/itstep/db/MyDatabase.class
-org/itstep/db/DatabaseConnection$Transformer.class
-org/itstep/db/DatabaseConnection.class
+org\itstep\db\MyDatabase.class
+org\itstep\db\DatabaseConnection$Transformer.class
+org\itstep\db\DatabaseConnection.class
+org\itstep\db\MyDatabase$Transformer.class
+org\itstep\Services.class

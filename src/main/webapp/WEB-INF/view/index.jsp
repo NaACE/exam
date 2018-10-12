@@ -7,7 +7,7 @@
     <title>home</title>
     <meta charset="utf-8"/>
     <link href="/resources/css/style.css" rel="stylesheet" type="text/css">
-    <script src="/resources/js.js"></script>
+    <script src="/resources/javascript.js"></script>
 </head>
 <body>
 
@@ -108,11 +108,11 @@
 <div id="body">
     <div class="blank">
         <div class="show_cat">
-            <a style="font-size: 3vw" name="about">О НАС</a><!-- ссылка на главный блог -->
+            <a name="about">О НАС</a><!-- ссылка на главный блог -->
         </div>
-        <p style="font-size: 2vw"> <span class="colorRed"> Exam </span> — это база в самом сердце города, где можно скрыться в любой удобной для тебя форме. Мужская стрижка, уход за бородой, классическое бритье, и разговор с теми, кому не все равно.
+        <p> <span class="colorRed"> Exam </span> — это база в самом сердце города, где можно скрыться в любой удобной для тебя форме. Мужская стрижка, уход за бородой, классическое бритье, и разговор с теми, кому не все равно.
         </p>
-        <p class="textCenter" style="font-size: 2vw">
+        <p class="textCenter">
             Ждём тебя, чтобы поделиться этим всем. Нальём джин-тоник с огурцом или 50 рома, посидим и отдохнём. Заглядывай и оставайся надолго.<br><br>
             Мы всегда на расстоянии звонка.<br><br>
 
@@ -121,17 +121,23 @@
     </div>
 
     <div class="blank" style="text-align: center"> <!-- все услуги -->
-        <div class="show_cat">
-            <a style="font-size: 3vw" name="services">УСЛУГИ</a> <!-- ссылка на услуги -->
+        <div class="show_main">
+            <div class="show_cat">
+                <a name="services">УСЛУГИ</a> <!-- ссылка на услуги -->
+            </div>
         </div>
-        <img style="width: 100%" src="https://pp.userapi.com/c844417/v844417066/fec80/htjqcDHw9BQ.jpg">
+
+        <div class="show_mini">
+
+        </div>
+
+        <img style="display: inline-block; width: 55vw" src="https://pp.userapi.com/c844417/v844417066/fec80/htjqcDHw9BQ.jpg">
     </div>
 
     <div class="blank"> <!-- все мастера -->
         <div class="show_cat">
-            <a style="font-size: 3vw" name="masters">МАСТЕРА</a> <!-- ссылка на мастеров -->
+            <a name="masters">МАСТЕРА</a> <!-- ссылка на мастеров -->
         </div><br>
-
 
         <div class="show_main">
             <div class="center">
@@ -151,7 +157,7 @@
                     </table>
                 </c:if>
             </div>
-        </div>
+        </div> <!-- вывод всех мастеров, если размер экрана < 760px -->
         <div class="show_mini">
             <div class="center">
                 <c:if test="${master != null}" var="isMasterPresent">
@@ -168,14 +174,14 @@
                     </table>
                 </c:if>
             </div>
-        </div>
+        </div> <!-- вывод всех мастеров, если размер экрана > 760px -->
     </div> <!-- end все мастера -->
 
 
     <div class="blank">
         <div class="show_cat">
-            <a style="font-size: 3vw" name="contacts">КОНТАКТЫ</a> <!-- ссылка на мастеров -->
-        </div>
+            <a name="contacts">КОНТАКТЫ</a> <!-- ссылка на мастеров -->
+        </div><br>
 
         <div class="show_main">
             <div style="width: 100%;">
@@ -188,14 +194,13 @@
                     <p style="font-size: 1vw">Email: hfp4e@vmani.coms<br>Телефон: (180)212-03-66</p>
                 </div>
             </div>
-        </div>
-
+        </div> <!-- информация о нас, если размер экрана < 760px -->
         <div class="show_mini">
             <p style="font-size: 3vw; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
             <p style="font-size: 2vw">с 10:00 до 22:00<br>Без выходных</p>
             <p style="font-size: 3vw; margin-bottom: 2%;margin-top: 2%">Адрес: г. Днепропетровск</p>
             <p style="font-size: 2vw">Email: hfp4e@vmani.coms<br>Телефон: (180)212-03-66</p>
-        </div>
+        </div> <!-- информация о нас, если размер экрана > 760px -->
     </div>
 </div>
 </body>

@@ -110,14 +110,14 @@ body {
     padding: 2% 4% 2% 4%;
 }
 .blank p {
-    font-size: 2vmax;
+    font-size: 1vw;
 }
 .blank_info {
     font-size: 2vm;
 }
 .show_cat {
     text-align: center;
-    font-size: 3vmax;
+    font-size: 2vw;
 }
 .button_nav {
     vertical-align:middle;
@@ -148,14 +148,12 @@ body {
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 5vm;
-    padding: 4vw;
-    width: auto;
+    font-size: 2vw;
+    padding: 2vw;
     transition: all 0.5s;
     cursor: pointer;
     margin: 4px;
-
-    cursor:pointer;
+    width: 21vw;
 }
 .button a {
     text-decoration: none;

@@ -20,6 +20,7 @@ public class HomeServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        /* посылаем данные в db/MyDatabase.java */
         master = MyDatabase.instance().fetchAllQuery("SELECT * FROM masters", set->
                 new Masters(set.getString("name"),set.getString("img"))
         );
@@ -29,7 +30,7 @@ public class HomeServlet extends HttpServlet {
 
         req.setAttribute("master", master);
         req.setAttribute("service", service);
-
+        /* отправляем данные в /WEB-INF/view/index.jsp*/
         req.getRequestDispatcher("/WEB-INF/view/index.jsp")
                 .forward(req, resp);
     }
@@ -37,8 +38,5 @@ public class HomeServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doPost(req, resp);
-
-
-
     }
 }
