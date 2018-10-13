@@ -286,25 +286,23 @@ ul.hr p {
     color: black;
 }
 .button_nav {
-    vertical-align:middle;
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #9c191b;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 5vm;
-    transition: all 0.5s;
-
-    cursor:pointer;
-    padding: 3px 3px 3px 6%;
-    margin: 4px;
-    width: 99%;
 
     list-style: none;
 
     overflow: hidden;
     height: 80px;
+
+    vertical-align:middle;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #9c191b;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 5vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: max-content;
 }
 
 @media screen  and (max-width: 1300px) {

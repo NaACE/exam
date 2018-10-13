@@ -12,7 +12,7 @@
 <body>
 <div id="mySidenav" class="sidenav">
     <div id="online_info">
-        <div class="form_div" style="background-color: #808080;height: 94px;">
+        <div class="form_div" style="background-color: #808080;height: auto;">
             <p style="margin: 40px 0 0;">
                 <strong style="color: #fff; font-size: 21px; margin: 0">ОНЛАЙН-ЗАПИСЬ</strong>
             </p><br>
@@ -24,23 +24,23 @@
 
     <div id="mainNav">
         <table class="form_table">
-            <tr>
-                <div class="form_div" onclick="openMasters()">
-                    <p>Сотрудник</p><br>
-                    <span class="selected_span" id="name_master"></span>
-                </div>
-            </tr>
-            <tr>
-                <div class="form_div" onclick="openServices()">
-                    <p>Услуга</p><br>
-                    <span class="selected_span" id="name_services"></span>
-                </div>
-            </tr>
-            <tr>
-                <form method="post">
-                    <input type="submit" class="button_nav"><p>ОФОРМИТЬ ВИЗИТ</p></input>
-                </form>
-            </tr>
+            <form action="/" method="post" name="Form">
+                <tr>
+                    <div class="form_div" onclick="openMasters()">
+                        <p>Сотрудник</p><br>
+                        <label name="name_master" class="selected_span" id="name_master"></label>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="form_div" onclick="openServices()">
+                        <p>Услуга</p><br>
+                        <label name="name_services" class="selected_span" id="name_services"></label>
+                    </div>
+                </tr>
+                <tr>
+                    <input type="submit" value="ОФОРМИТЬ ВИЗИТ" class="form_div" style="background-color: #9c191b; text-align: center;color: #fff;vertical-align:middle;display: inline-block;transition: all 0.5s;cursor: pointer;list-style: none;margin: 4px 0 0;padding: 0;overflow: hidden;width: 482.99px"/>
+                </tr>
+            </form>
         </table>
     </div>
 
@@ -69,7 +69,7 @@
                         getElementById('mainNav').style.display = 'block';
                         getElementById('all_master').style.display = 'none';
                         getElementById('all_service').style.display = 'none';
-                        getElementById('name_service').textContent = '${service.name}';">
+                        getElementById('name_services').textContent = '${service.name}';">
                     <p>${service.name}</p>
                     <p style="display: inline-block">
                         <span class="selected_span">${service.price} ₴ | </span>
