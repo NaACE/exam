@@ -6,11 +6,10 @@
 <head>
     <title>home</title>
     <meta charset="utf-8"/>
-    <link href="/resources/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/resources/css/newCSS.css" rel="stylesheet" type="text/css">
     <script src="/resources/javascript.js"></script>
 </head>
 <body>
-
 <div id="mySidenav" class="sidenav">
     <div id="online_info">
         <div class="form_div" style="background-color: #808080;height: 94px;">
@@ -82,29 +81,30 @@
     </div>
 </div>
 
-<div id="header">
-    <ul id="menu"> <!-- main menu -->
-        <li><a href="#about">О нас</a></li>
-        <li><a href="#services">Услуги</a></li>
-        <li><a href="#masters">Мастера</a></li>
-        <li><a href="#contacts">Контакты</a></li>
-        <li style="margin-left: 6%"><img src="http://www.mediafire.com/convkey/bcd2/3u35230l5e0y3vyzg.jpg" style="max-width: 420px;"></li>
-    </ul>
 
-    <!-- mini manu -->
+<div id="header">
+    <div class="show_main">
+        <ul>
+            <li><a href="#about">ГЛАВНАЯ</a></li>
+            <li><a href="#services">УСЛУГИ</a></li>
+            <li><a href="#masters">МАСТЕР</a></li>
+            <li><a href="#contact">КОНТАКТЫ</a></li>
+        </ul>
+    </div>
     <div class="mobile-container">
         <div class="topnav">
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             <a href="#home" class="active"><br></a>
             <div id="myLinks">
-                <a href="#about">О нас</a>
-                <a href="#services">Услуги</a>
-                <a href="#masters">Мастера</a>
-                <a href="#contacts">Контакты</a>
+                <a href="#about">ГЛАВНАЯ</a>
+                <a href="#services">УСЛУГИ</a>
+                <a href="#masters">МАСТЕР</a>
+                <a href="#contacts">КОНТАКТЫ</a>
             </div>
         </div>
     </div>
 </div>
+
 <div id="body">
     <div class="blank">
         <div class="show_main">
@@ -113,8 +113,8 @@
             </div>
 
             <p> <span class="colorRed"> Exam </span> — это база в самом сердце города, где можно скрыться в любой удобной для тебя форме. Мужская стрижка, уход за бородой, классическое бритье, и разговор с теми, кому не все равно.</p>
-            <p class="textCenter">Ждём тебя, чтобы поделиться этим всем. Нальём джин-тоник с огурцом или 50 рома, посидим и отдохнём. Заглядывай и оставайся надолго.<br><br>Мы всегда на расстоянии звонка.<br><br>
-                <span class="button" onclick="openNav()">Записаться</span> <!-- кнопка регистрации -->
+            <p style="text-align: center;">Ждём тебя, чтобы поделиться этим всем. Нальём джин-тоник с огурцом или 50 рома, посидим и отдохнём. Заглядывай и оставайся надолго.<br><br>Мы всегда на расстоянии звонка.<br><br>
+                <span style="width: 50vw" class="button" onclick="openNav()">Записаться</span> <!-- кнопка регистрации -->
             </p>
         </div>
         <div class="show_mini">
@@ -122,7 +122,7 @@
                 <a style="font-size: 3vmax" name="about">О НАС</a><!-- ссылка на главный блог -->
             </div>
             <p style="font-size: 2vmax;"> <span class="colorRed"> Exam </span> — это база в самом сердце города, где можно скрыться в любой удобной для тебя форме. Мужская стрижка, уход за бородой, классическое бритье, и разговор с теми, кому не все равно.</p>
-            <p style="font-size: 2vmax;margin-bottom: 0" class="textCenter">Ждём тебя, чтобы поделиться этим всем. Нальём джин-тоник с огурцом или 50 рома, посидим и отдохнём. Заглядывай и оставайся надолго.<br><br>Мы всегда на расстоянии звонка.<br>
+            <p style="font-size: 2vmax;margin-bottom: 0;text-align: center;" class="textCenter">Ждём тебя, чтобы поделиться этим всем. Нальём джин-тоник с огурцом или 50 рома, посидим и отдохнём. Заглядывай и оставайся надолго.<br><br>Мы всегда на расстоянии звонка.<br>
                 <span style="width: 50vw" class="button" onclick="openNav()">Записаться</span> <!-- кнопка регистрации -->
             </p>
         </div>
@@ -176,23 +176,22 @@
     </div>
 
     <div class="blank"> <!-- все мастера -->
-        <div class="show_cat">
-            <a name="masters">МАСТЕРА</a> <!-- ссылка на мастеров -->
-        </div><br>
-
         <div class="show_main">
+            <div class="show_cat">
+                <a name="masters">МАСТЕРА</a> <!-- ссылка на мастеров -->
+            </div><br>
             <div class="center">
                 <c:if test="${master != null}" var="isMasterPresent">
-                    <table>
+                    <table style="width: 100%">
                         <tr>
                                 <%--@elvariable id="master" type="java.util.List"--%>
                             <c:forEach items="${master}" var="master" varStatus="status">
-                                <th>
-                                    <p class="inactive_employee_withdrawal" style="font-size: 2vw;">
-                                        <img src="${master.img}"><br><br>
-                                            ${master.name}
+                                <td>
+                                    <p class="inactive_employee_withdrawal" style="text-align: center;">
+                                        <img style="width: 50vw; max-width: 280px" src="${master.img}"><br><br>
+                                        <span>${master.name}</span>
                                     </p>
-                                </th>
+                                </td>
                             </c:forEach>
                         </tr>
                     </table>
@@ -200,18 +199,21 @@
             </div>
         </div> <!-- вывод всех мастеров, если размер экрана < 760px -->
         <div class="show_mini">
-            <div class="center">
+            <div class="show_cat">
+                <a style="font-size: 3vmax;" name="masters">МАСТЕРА</a> <!-- ссылка на мастеров -->
+            </div>
+            <div style="text-align: center">
                 <c:if test="${master != null}" var="isMasterPresent">
                     <table>
-                                <%--@elvariable id="master" type="java.util.List"--%>
-                            <c:forEach items="${master}" var="master" varStatus="status">
-                                <tr>
-                                    <p class="inactive_employee_withdrawal" style="font-size: 3vw;">
-                                        <img style="width: 50vw; max-width: 250px" src="${master.img}"><br><br>
-                                            ${master.name}
-                                    </p>
-                                </tr>
-                            </c:forEach>
+                            <%--@elvariable id="master" type="java.util.List"--%>
+                        <c:forEach items="${master}" var="master" varStatus="status">
+                            <tr>
+                                <p class="inactive_employee_withdrawal" style="font-size: 3vw;">
+                                    <img style="width: 50vw; max-width: 320px" src="${master.img}"><br><br>
+                                        ${master.name}
+                                </p>
+                            </tr>
+                        </c:forEach>
                     </table>
                 </c:if>
             </div>
@@ -237,7 +239,7 @@
         </div> <!-- информация о нас, если размер экрана < 760px -->
         <div class="show_mini" style="text-align: center">
             <div class="show_cat">
-                <a style="font-size: 3vmax; margin-bottom: 6px" name="contacts">КОНТАКТЫ</a> <!-- ссылка на мастеров -->
+                <a style="font-size: 3vmax; margin-bottom: 6px" name="contacts">КОНТАКТЫ</a> <!-- ссылка на КОНТАКТЫ -->
             </div>
 
             <p style="font-size: 3vmax; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>

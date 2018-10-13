@@ -1,7 +1,7 @@
-org/itstep/db/MyDatabase$Transformer.class
-org/itstep/Services.class
-org/itstep/db/MyDatabase.class
-org/itstep/HomeServlet.class
-org/itstep/Masters.class
-org/itstep/db/DatabaseConnection$Transformer.class
-org/itstep/db/DatabaseConnection.class
+org\itstep\db\MyDatabase.class
+org\itstep\db\DatabaseConnection$Transformer.class
+org\itstep\HomeServlet.class
+org\itstep\db\DatabaseConnection.class
+org\itstep\Masters.class
+org\itstep\db\MyDatabase$Transformer.class
+org\itstep\Services.class
