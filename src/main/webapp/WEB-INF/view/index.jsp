@@ -88,7 +88,7 @@
         <li><a href="#services">Услуги</a></li>
         <li><a href="#masters">Мастера</a></li>
         <li><a href="#contacts">Контакты</a></li>
-        <li style="margin-left: 6%"><img src="https://pp.userapi.com/c849528/v849528520/7a1e1/7nXTDF0suIs.jpg" style="max-width: 420px;"></li>
+        <li style="margin-left: 6%"><img src="http://www.mediafire.com/convkey/bcd2/3u35230l5e0y3vyzg.jpg" style="max-width: 420px;"></li>
     </ul>
 
     <!-- mini manu -->
@@ -107,17 +107,25 @@
 </div>
 <div id="body">
     <div class="blank">
-        <div class="show_cat">
-            <a name="about">О НАС</a><!-- ссылка на главный блог -->
-        </div>
-        <p> <span class="colorRed"> Exam </span> — это база в самом сердце города, где можно скрыться в любой удобной для тебя форме. Мужская стрижка, уход за бородой, классическое бритье, и разговор с теми, кому не все равно.
-        </p>
-        <p class="textCenter">
-            Ждём тебя, чтобы поделиться этим всем. Нальём джин-тоник с огурцом или 50 рома, посидим и отдохнём. Заглядывай и оставайся надолго.<br><br>
-            Мы всегда на расстоянии звонка.<br><br>
+        <div class="show_main">
+            <div class="show_cat">
+                <a name="about">О НАС</a><!-- ссылка на главный блог -->
+            </div>
 
-            <span class="button" onclick="openNav()">Записаться</span> <!-- кнопка регистрации -->
-        </p>
+            <p> <span class="colorRed"> Exam </span> — это база в самом сердце города, где можно скрыться в любой удобной для тебя форме. Мужская стрижка, уход за бородой, классическое бритье, и разговор с теми, кому не все равно.</p>
+            <p class="textCenter">Ждём тебя, чтобы поделиться этим всем. Нальём джин-тоник с огурцом или 50 рома, посидим и отдохнём. Заглядывай и оставайся надолго.<br><br>Мы всегда на расстоянии звонка.<br><br>
+                <span class="button" onclick="openNav()">Записаться</span> <!-- кнопка регистрации -->
+            </p>
+        </div>
+        <div class="show_mini">
+            <div class="show_cat">
+                <a style="font-size: 3vmax" name="about">О НАС</a><!-- ссылка на главный блог -->
+            </div>
+            <p style="font-size: 2vmax;"> <span class="colorRed"> Exam </span> — это база в самом сердце города, где можно скрыться в любой удобной для тебя форме. Мужская стрижка, уход за бородой, классическое бритье, и разговор с теми, кому не все равно.</p>
+            <p style="font-size: 2vmax;margin-bottom: 0" class="textCenter">Ждём тебя, чтобы поделиться этим всем. Нальём джин-тоник с огурцом или 50 рома, посидим и отдохнём. Заглядывай и оставайся надолго.<br><br>Мы всегда на расстоянии звонка.<br>
+                <span style="width: 50vw" class="button" onclick="openNav()">Записаться</span> <!-- кнопка регистрации -->
+            </p>
+        </div>
     </div>
 
     <div class="blank" style="text-align: center"> <!-- все услуги -->
@@ -125,13 +133,46 @@
             <div class="show_cat">
                 <a name="services">УСЛУГИ</a> <!-- ссылка на услуги -->
             </div>
+            <img style="display: inline-block; width: 55vw" src="http://www.mediafire.com/convkey/fbed/1c21ixqgbbfj3b6zg.jpg">
         </div>
 
         <div class="show_mini">
-
+            <div class="show_cat">
+                <a style="font-size: 3vmax;" name="services">УСЛУГИ</a> <!-- ссылка на услуги -->
+            </div>
+            <br>
+            <table class="table_mini_service">
+                <tr>
+                    <td style="font-size: 2vmax;float: left;">СТРИЖКА</td>
+                    <td style="font-size: 2vmax;float: right;">300 грн.</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 2vmax;float: left;">СТРИЖКА МАШИНКОЙ</td>
+                    <td style="font-size: 2vmax;float: right;">200 грн.</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 2vmax;float: left;">СТРИЖКА БОРОДЫ</td>
+                    <td style="font-size: 2vmax;float: right;">150 грн.</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 2vmax;float: left;">БРИТЬЕ</td>
+                    <td style="font-size: 2vmax;float: right;">250 грн.</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 2vmax;float: left;">ДЕТСКАЯ</td>
+                    <td style="font-size: 2vmax;float: right;">250 грн.</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 2vmax;float: left;">ОТЕЦ И СЫН</td>
+                    <td style="font-size: 2vmax;float: right;">500 грн.</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 2vmax;float: left;">СТРИЖКА И СТРИЖКА БОРОДЫ</td>
+                    <td style="font-size: 2vmax;float: right;">400 грн.</td>
+                </tr>
+            </table>
         </div>
 
-        <img style="display: inline-block; width: 55vw" src="https://pp.userapi.com/c844417/v844417066/fec80/htjqcDHw9BQ.jpg">
     </div>
 
     <div class="blank"> <!-- все мастера -->
@@ -179,11 +220,10 @@
 
 
     <div class="blank">
-        <div class="show_cat">
-            <a name="contacts">КОНТАКТЫ</a> <!-- ссылка на мастеров -->
-        </div><br>
-
         <div class="show_main">
+            <div class="show_cat">
+                <a name="contacts">КОНТАКТЫ</a> <!-- ссылка на мастеров -->
+            </div><br>
             <div style="width: 100%;">
                 <div style="width: 45%;display:inline-block;">
                     <p style="font-size: 2vw; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
@@ -195,11 +235,15 @@
                 </div>
             </div>
         </div> <!-- информация о нас, если размер экрана < 760px -->
-        <div class="show_mini">
-            <p style="font-size: 3vw; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
-            <p style="font-size: 2vw">с 10:00 до 22:00<br>Без выходных</p>
-            <p style="font-size: 3vw; margin-bottom: 2%;margin-top: 2%">Адрес: г. Днепропетровск</p>
-            <p style="font-size: 2vw">Email: hfp4e@vmani.coms<br>Телефон: (180)212-03-66</p>
+        <div class="show_mini" style="text-align: center">
+            <div class="show_cat">
+                <a style="font-size: 3vmax; margin-bottom: 6px" name="contacts">КОНТАКТЫ</a> <!-- ссылка на мастеров -->
+            </div>
+
+            <p style="font-size: 3vmax; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
+            <p style="font-size: 2vmax; margin: 0;">с 10:00 до 22:00<br>Без выходных</p>
+            <p style="font-size: 3vmax; margin-bottom: 2%;margin-top: 2%">Адрес: г. Днепропетровск</p>
+            <p style="font-size: 2vmax; margin: 0;">Email: hfp4e@vmani.coms<br>Телефон: (180)212-03-66</p>
         </div> <!-- информация о нас, если размер экрана > 760px -->
     </div>
 </div>
