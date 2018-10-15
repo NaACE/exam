@@ -41,22 +41,19 @@ public class HomeServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String name_master = req.getParameter("name_master");
-        String name_services = req.getParameter("name_services");
+        String master = req.getParameter("name_master");
+        String services = req.getParameter("name_services");
 
-        if(name_services != "") {
+        if(services != "") {
             try(Connection connection = DriverManager.getConnection(connectionString, userName, password)) {
-                String sql = "insert into all_client(master,services) value (?,?)";
-                try(PreparedStatement statement = connection.prepareStatement(sql)) {
-                    statement.setString(1,name_master);
-                    statement.setString(2,name_services);
-                    statement.execute();
-                }
+                String sql = "INSERT INTO all_client (master, services)  VALUES (?,?)";
+                PreparedStatement preparedStatement = connection.prepareStatement(sql);
+                preparedStatement.setString(1, master);
+                preparedStatement.setString(2, services);
+                preparedStatement.execute();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         } resp.sendRedirect("/");
-
-        super.doGet(req, resp);
     }
 }

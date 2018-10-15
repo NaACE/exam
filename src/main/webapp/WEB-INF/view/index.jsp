@@ -24,21 +24,23 @@
 
     <div id="mainNav">
         <table class="form_table">
-            <form action="/" method="post" name="Form">
+            <form method="post">
                 <tr>
                     <div class="form_div" onclick="openMasters()">
                         <p>Сотрудник</p><br>
                         <label name="name_master" class="selected_span" id="name_master"></label>
+                        <input id="name_masterID" name="name_master" type="hidden">
                     </div>
                 </tr>
                 <tr>
                     <div class="form_div" onclick="openServices()">
                         <p>Услуга</p><br>
                         <label name="name_services" class="selected_span" id="name_services"></label>
+                        <input id="name_servicesID" name="name_services" type="hidden">
                     </div>
                 </tr>
-                <tr>
-                    <input type="submit" value="ОФОРМИТЬ ВИЗИТ" class="form_div" style="background-color: #9c191b; text-align: center;color: #fff;vertical-align:middle;display: inline-block;transition: all 0.5s;cursor: pointer;list-style: none;margin: 4px 0 0;padding: 0;overflow: hidden;width: 482.99px"/>
+                <>
+                <button type="submit" class="form_div" style="background-color: #9c191b; text-align: center;color: #fff;vertical-align:middle;display: inline-block;transition: all 0.5s;cursor: pointer;list-style: none;margin: 4px 0 0;padding: 0;overflow: hidden;width: 482.99px">ОФОРМИТЬ ВИЗИТ</button>>
                 </tr>
             </form>
         </table>
@@ -52,7 +54,8 @@
                         getElementById('mainNav').style.display = 'block';
                         getElementById('all_master').style.display = 'none';
                         getElementById('all_service').style.display = 'none';
-                        getElementById('name_master').textContent = '${master.name}';">
+                        getElementById('name_master').textContent = '${master.name}';
+                        getElementById('name_masterID').value = '${master.name}';">
                     <ul class="hr">
                         <img src="${master.img}">
                         <p>${master.name}</p>
@@ -69,7 +72,8 @@
                         getElementById('mainNav').style.display = 'block';
                         getElementById('all_master').style.display = 'none';
                         getElementById('all_service').style.display = 'none';
-                        getElementById('name_services').textContent = '${service.name}';">
+                        getElementById('name_services').textContent = '${service.name}';
+                        getElementById('name_servicesID').value = '${service.name}';">
                     <p>${service.name}</p>
                     <p style="display: inline-block">
                         <span class="selected_span">${service.price} ₴ | </span>
@@ -88,7 +92,7 @@
             <li><a href="#about">ГЛАВНАЯ</a></li>
             <li><a href="#services">УСЛУГИ</a></li>
             <li><a href="#masters">МАСТЕР</a></li>
-            <li><a href="#contact">КОНТАКТЫ</a></li>
+            <li><a href="#contacts">КОНТАКТЫ</a></li>
         </ul>
     </div>
     <div class="mobile-container">

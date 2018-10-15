@@ -26,7 +26,6 @@ public class MyDatabase extends HttpServlet {
         return inst;
     }
 
-
     public <T> List<T> fetchAllQuery(String query, Transformer<T> transformer){
         List<T> data = new LinkedList<>();
         try {
@@ -44,7 +43,6 @@ public class MyDatabase extends HttpServlet {
         }
         return data;
     }
-
 
     public interface Transformer<T>{
         T transform(ResultSet set) throws Exception;
