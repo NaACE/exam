@@ -32,10 +32,17 @@ function openMasters() {
     document.getElementById("all_master").style.display = "block";
     document.getElementById("mainNav").style.display = "none";
     document.getElementById("all_service").style.display = "none";
+    document.getElementById("all_time").style.display = "none";
 }
 function openServices() {
     document.getElementById("all_master").style.display = "none";
     document.getElementById("mainNav").style.display = "none";
     document.getElementById("all_service").style.display = "block";
-
+    document.getElementById("all_time").style.display = "none";
+}
+function openDate() {
+    document.getElementById("all_master").style.display = "none";
+    document.getElementById("mainNav").style.display = "none";
+    document.getElementById("all_service").style.display = "none";
+    document.getElementById("all_time").style.display = "block";
 }

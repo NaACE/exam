@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 body {
     margin: 0;
-    background-image: url("https://sun1-19.userapi.com/c840630/v840630987/5d287/R6Tvpy3eYy0.jpg");
+    background-image: url("http://www.mediafire.com/convkey/2882/udso38zmsm7n36tzg.jpg");
     font-family: 'Oswald', sans-serif;
 }
 #header {
@@ -118,6 +118,9 @@ textCenter {
      display: none;
  }
 #all_service {
+    display: none;
+}
+#all_time {
     display: none;
 }
 

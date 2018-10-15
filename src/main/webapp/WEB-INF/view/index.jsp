@@ -5,7 +5,7 @@
 <html>
 <head>
     <title>home</title>
-    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="/resources/css/newCSS.css" rel="stylesheet" type="text/css">
     <script src="/resources/javascript.js"></script>
 </head>
@@ -39,8 +39,15 @@
                         <input id="name_servicesID" name="name_services" type="hidden">
                     </div>
                 </tr>
-                <>
-                <button type="submit" class="form_div" style="background-color: #9c191b; text-align: center;color: #fff;vertical-align:middle;display: inline-block;transition: all 0.5s;cursor: pointer;list-style: none;margin: 4px 0 0;padding: 0;overflow: hidden;width: 482.99px">ОФОРМИТЬ ВИЗИТ</button>>
+                <tr>
+                    <div class="form_div" onclick="openDate()">
+                        <p>Дата и время</p><br>
+                        <label name="date_receipt" class="selected_span" id="date_receipt"></label>
+                        <input id="date_receiptID" name="date_receipt" type="hidden">
+                    </div>
+                </tr>
+                <tr>
+                    <button type="submit" class="form_div" style="background-color: #9c191b; text-align: center;color: #fff;vertical-align:middle;display: inline-block;transition: all 0.5s;cursor: pointer;list-style: none;margin: 4px 0 0;padding: 0;overflow: hidden;width: 482.99px">ОФОРМИТЬ ВИЗИТ</button>>
                 </tr>
             </form>
         </table>
@@ -77,11 +84,32 @@
                     <p>${service.name}</p>
                     <p style="display: inline-block">
                         <span class="selected_span">${service.price} ₴ | </span>
-                        <span class="selected_span">${service.times} час</span>
+                        <span class="selected_span">${service.times}</span>
                     </p>
                 </div>
             </c:forEach>
         </c:if>
+    </div>
+    <div id="all_time">
+        <div class="container">
+            <div class="row">
+                <div class='col-sm-6'>
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker1'>
+                            <input type='text' class="form-control" />
+                            <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        $('#datetimepicker1').datetimepicker();
+                    });
+                </script>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -100,10 +128,10 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             <a href="#home" class="active"><br></a>
             <div id="myLinks">
-                <a href="#about">ГЛАВНАЯ</a>
-                <a href="#services">УСЛУГИ</a>
-                <a href="#masters">МАСТЕР</a>
-                <a href="#contacts">КОНТАКТЫ</a>
+                <a href="#about_mini">ГЛАВНАЯ</a>
+                <a href="#services_mini">УСЛУГИ</a>
+                <a href="#masters_mini">МАСТЕР</a>
+                <a href="#contacts_mini">КОНТАКТЫ</a>
             </div>
         </div>
     </div>
@@ -123,7 +151,7 @@
         </div>
         <div class="show_mini">
             <div class="show_cat">
-                <a style="font-size: 3vmax" name="about">О НАС</a><!-- ссылка на главный блог -->
+                <a style="font-size: 3vmax" name="about_mini">О НАС</a><!-- ссылка на главный блог -->
             </div>
             <p style="font-size: 2vmax;"> <span class="colorRed"> Exam </span> — это база в самом сердце города, где можно скрыться в любой удобной для тебя форме. Мужская стрижка, уход за бородой, классическое бритье, и разговор с теми, кому не все равно.</p>
             <p style="font-size: 2vmax;margin-bottom: 0;text-align: center;" class="textCenter">Ждём тебя, чтобы поделиться этим всем. Нальём джин-тоник с огурцом или 50 рома, посидим и отдохнём. Заглядывай и оставайся надолго.<br><br>Мы всегда на расстоянии звонка.<br>
@@ -142,7 +170,7 @@
 
         <div class="show_mini">
             <div class="show_cat">
-                <a style="font-size: 3vmax;" name="services">УСЛУГИ</a> <!-- ссылка на услуги -->
+                <a style="font-size: 3vmax;" name="services_mini">УСЛУГИ</a> <!-- ссылка на услуги -->
             </div>
             <br>
             <table class="table_mini_service">
@@ -204,7 +232,7 @@
         </div> <!-- вывод всех мастеров, если размер экрана < 760px -->
         <div class="show_mini">
             <div class="show_cat">
-                <a style="font-size: 3vmax;" name="masters">МАСТЕРА</a> <!-- ссылка на мастеров -->
+                <a style="font-size: 3vmax;" name="masters_mini">МАСТЕРА</a> <!-- ссылка на мастеров -->
             </div>
             <div style="text-align: center">
                 <c:if test="${master != null}" var="isMasterPresent">
@@ -243,7 +271,7 @@
         </div> <!-- информация о нас, если размер экрана < 760px -->
         <div class="show_mini" style="text-align: center">
             <div class="show_cat">
-                <a style="font-size: 3vmax; margin-bottom: 6px" name="contacts">КОНТАКТЫ</a> <!-- ссылка на КОНТАКТЫ -->
+                <a style="font-size: 3vmax; margin-bottom: 6px" name="contacts_mini">КОНТАКТЫ</a> <!-- ссылка на КОНТАКТЫ -->
             </div>
 
             <p style="font-size: 3vmax; margin-bottom: 2%;margin-top: 2%;">Время работы:</p>
