@@ -63,6 +63,20 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="database" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+        <item name="all_client: table" type="ffe0bd85:SqliteImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="database" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+        <item name="services: table" type="ffe0bd85:SqliteImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -137,34 +151,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
+      <file leaf-file-name="MyDatabase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/db/MyDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-              <folding>
-                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newCSS.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/newCSS.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="122" column="9" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="javascript.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/javascript.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="40" column="63" lean-forward="true" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
+            <state relative-caret-position="81">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -174,6 +165,15 @@
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/HomeServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -190,7 +190,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Transformer</find>
       <find>EXE</find>
       <find>DatabaseConnection</find>
       <find>form</find>
@@ -220,6 +219,7 @@
       <find>about</find>
       <find>masters</find>
       <find>all_</find>
+      <find>times</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -237,19 +237,16 @@
         <option value="89cc3960-d51b-4fea-aaae-9526bc3afe59/schema/barbershop/table/services.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/89cc3960-d51b-4fea-aaae-9526bc3afe59/console.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js.js" />
-        <option value="$PROJECT_DIR$/src/main/java/org/itstep/Services.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e4860a9f-c92e-40ce-b878-1520b523fb4c/console_1.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e4860a9f-c92e-40ce-b878-1520b523fb4c/console.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/org/itstep/Add.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7a707cab-c4a6-4fa0-80ae-d57079ac843a/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/org/itstep/db/MyDatabase.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/635983af-af5a-4d00-a980-612d89d7b90a/console_1.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/635983af-af5a-4d00-a980-612d89d7b90a/console.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/client.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/635983af-af5a-4d00-a980-612d89d7b90a/console_2.sql" />
         <option value="$PROJECT_DIR$/src/main/java/org/itstep/db/DatabaseConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/itstep/HomeServlet.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4a689070-50de-4486-a215-19c2ae5cde4b/console.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/services.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/masters.sql" />
@@ -257,7 +254,10 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2abf57b3-7dea-422a-81eb-b3f9c6f0795d/console_1.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/newCSS.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/javascript.js" />
+        <option value="$PROJECT_DIR$/src/main/java/org/itstep/Services.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/itstep/db/MyDatabase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/itstep/HomeServlet.java" />
       </list>
     </option>
   </component>
@@ -300,16 +300,17 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-5" />
-    <option name="y" value="-5" />
-    <option name="width" value="1930" />
-    <option name="height" value="1090" />
+    <option name="x" value="646" />
+    <option name="width" value="1278" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -342,6 +343,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="itstep" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="itstep" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="exam" type="b2602c69:ProjectViewProjectNode" />
@@ -388,9 +398,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -400,7 +408,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539591102181" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;Sqlite (Xerial)" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Project" />
@@ -517,11 +525,14 @@
       <workItem from="1539584407577" duration="5876000" />
       <workItem from="1539596918498" duration="8259000" />
       <workItem from="1539612439952" duration="6084000" />
+      <workItem from="1540044394140" duration="16338000" />
+      <workItem from="1540128467116" duration="1632000" />
+      <workItem from="1540186804953" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122561000" />
+    <option name="totallyTimeSpent" value="141130000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,39 +544,72 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="-5" width="1930" height="1090" extended-state="7" />
+    <frame x="-5" y="-5" width="1930" height="1090" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5016155" side_tool="true" weight="0.41369864" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.15643352" />
-      <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32949308" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.116204694" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24758843" />
-      <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32889733" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32949308" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983845" weight="0.39115646" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5016155" side_tool="true" weight="0.41369864" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32026145" />
+      <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32949308" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983845" weight="0.21621622" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32949308" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32949308" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="7" visible="true" weight="0.13097712" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17963752" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24302134" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Database" order="6" weight="0.19199346" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24733475" />
+      <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.12993763" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.12993763" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983845" visible="true" weight="0.21757323" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24733475" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32949308" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5016155" side_tool="true" weight="0.41369864" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32889733" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24302134" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32949308" />
+      <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32949308" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32949308" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32029116" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Database" order="6" weight="0.19263157" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -590,7 +634,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://8e34c558-5ece-4702-8bb1-b23b8012ec4e/schema/main/table/masters" />
     <entry file="das://c9e40f94-9f4c-4cc6-9138-a2dd27e0032a/schema/main/table/masters" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fe3e3ed0-0173-4e7a-af16-c18f67e5dc9f/console.sql" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -612,13 +655,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js.js" />
     <entry file="das://89cc3960-d51b-4fea-aaae-9526bc3afe59/schema/barbershop/table/record" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/Services.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://89cc3960-d51b-4fea-aaae-9526bc3afe59/schema/barbershop/table/services" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/89cc3960-d51b-4fea-aaae-9526bc3afe59/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e4860a9f-c92e-40ce-b878-1520b523fb4c/console_1.sql" />
@@ -653,20 +689,8 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7a707cab-c4a6-4fa0-80ae-d57079ac843a/console.sql" />
     <entry file="das://7a707cab-c4a6-4fa0-80ae-d57079ac843a/schema/barbershop/table/masters" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/Barbershop DB.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://635983af-af5a-4d00-a980-612d89d7b90a/schema/main/table/services">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/Barbershop DB.sql" />
+    <entry file="das://635983af-af5a-4d00-a980-612d89d7b90a/schema/main/table/services" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/635983af-af5a-4d00-a980-612d89d7b90a/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -681,27 +705,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://7a707cab-c4a6-4fa0-80ae-d57079ac843a/schema/exam/table/all_employee">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://635983af-af5a-4d00-a980-612d89d7b90a/schema/main/table/masters">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://635983af-af5a-4d00-a980-612d89d7b90a/schema/main/table/all_client">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://7a707cab-c4a6-4fa0-80ae-d57079ac843a/schema/exam/table/all_employee" />
+    <entry file="das://635983af-af5a-4d00-a980-612d89d7b90a/schema/main/table/masters" />
+    <entry file="das://635983af-af5a-4d00-a980-612d89d7b90a/schema/main/table/all_client" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/635983af-af5a-4d00-a980-612d89d7b90a/console_2.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -709,13 +715,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://4a689070-50de-4486-a215-19c2ae5cde4b/schema/barbershop/table/masters">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://4a689070-50de-4486-a215-19c2ae5cde4b/schema/barbershop/table/masters" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4a689070-50de-4486-a215-19c2ae5cde4b/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -723,52 +723,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/db/DatabaseConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/db/MyDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="807">
-          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/client.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/client.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2abf57b3-7dea-422a-81eb-b3f9c6f0795d/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2abf57b3-7dea-422a-81eb-b3f9c6f0795d/schema/main/table/services">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2abf57b3-7dea-422a-81eb-b3f9c6f0795d/schema/main/table/masters">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/HomeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="47" column="64" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -779,17 +738,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/services.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="12" selection-end-column="77" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/services.sql" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/masters.sql" />
+    <entry file="das://2abf57b3-7dea-422a-81eb-b3f9c6f0795d/schema/main/table/services">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/masters.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/Services.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="127" lean-forward="true" selection-start-line="8" selection-end-line="11" selection-end-column="127" />
+        <state relative-caret-position="119">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2abf57b3-7dea-422a-81eb-b3f9c6f0795d/schema/main/table/masters">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/newCSS.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="122" column="9" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-269">
+          <caret line="81" column="48" lean-forward="true" selection-start-line="81" selection-start-column="48" selection-end-line="81" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/javascript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="40" column="63" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bc2aa76e-c916-4eba-a10c-45d6a4d0e170/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/db/DatabaseConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -800,29 +799,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/javascript.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/db/MyDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="40" column="63" lean-forward="true" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
+        <state relative-caret-position="81">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/newCSS.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/itstep/HomeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="122" column="9" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="697">
+          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
         </state>
       </provider>
     </entry>

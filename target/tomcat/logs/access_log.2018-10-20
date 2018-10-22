@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [20/Oct/2018:17:12:11 +0300] "GET / HTTP/1.1" 200 23132 http-bio-8080-exec-1 3098
+0:0:0:0:0:0:0:1 - - [20/Oct/2018:17:12:11 +0300] "GET /resources/javascript.js HTTP/1.1" 200 1701 http-bio-8080-exec-4 142
+0:0:0:0:0:0:0:1 - - [20/Oct/2018:17:12:11 +0300] "GET /resources/css/newCSS.css HTTP/1.1" 200 6096 http-bio-8080-exec-3 149
+0:0:0:0:0:0:0:1 - - [20/Oct/2018:17:12:14 +0300] "GET /favicon.ico HTTP/1.1" 200 23132 http-bio-8080-exec-5 10
+0:0:0:0:0:0:0:1 - - [20/Oct/2018:17:26:24 +0300] "GET /favicon.ico HTTP/1.1" 200 23132 http-bio-8080-exec-8 9
+0:0:0:0:0:0:0:1 - - [20/Oct/2018:17:26:28 +0300] "GET /favicon.ico HTTP/1.1" 200 23132 http-bio-8080-exec-9 6

@@ -12,15 +12,14 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 @WebServlet("/")
 public class HomeServlet extends HttpServlet {
     List<Masters> master;
     List<Services> service;
 
-    String connectionString = "jdbc:sqlite:database.db";
-    String userName = "root";
-    String password = "";
+    String sqlite = "jdbc:sqlite:database.db";
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -29,7 +28,7 @@ public class HomeServlet extends HttpServlet {
                 new Masters(set.getString("name"),set.getString("img"))
         );
         service = MyDatabase.instance().fetchAllQuery("SELECT * FROM services", set ->
-                new Services(set.getString("name"),set.getString("price"),set.getString("times"))
+                new Services(set.getString("name"),set.getString("price"))
         );
 
         req.setAttribute("master", master);
@@ -44,16 +43,15 @@ public class HomeServlet extends HttpServlet {
         String master = req.getParameter("name_master");
         String services = req.getParameter("name_services");
 
-        if(services != "") {
-            try(Connection connection = DriverManager.getConnection(connectionString, userName, password)) {
-                String sql = "INSERT INTO all_client (master, services)  VALUES (?,?)";
-                PreparedStatement preparedStatement = connection.prepareStatement(sql);
-                preparedStatement.setString(1, master);
-                preparedStatement.setString(2, services);
-                preparedStatement.execute();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        } resp.sendRedirect("/");
+        try(Connection connection = DriverManager.getConnection(sqlite)) {
+            String sql = "INSERT INTO all_client(master,services) VALUES(?,?)";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setString(1, master);
+            statement.setString(2, services);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        resp.sendRedirect("/");
     }
 }

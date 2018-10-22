@@ -83,8 +83,7 @@
                         getElementById('name_servicesID').value = '${service.name}';">
                     <p>${service.name}</p>
                     <p style="display: inline-block">
-                        <span class="selected_span">${service.price} ₴ | </span>
-                        <span class="selected_span">${service.times}</span>
+                        <span class="selected_span">${service.price} ₴ </span>
                     </p>
                 </div>
             </c:forEach>
